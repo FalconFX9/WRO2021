@@ -25,6 +25,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "C:/RB3rt/sdk/common/ev3api",
                 "C:/RB3rt/sdk/common/library/lib-ev3cxx"
             ],
             "browse": {
