@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "${fileDirname}\\Make.bat",
+            "isShellCommand": true,
+            "args": ["-b", "${fileDirname}"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "upload",
+            "command": "${fileDirname}\\Make.bat",
+            "isShellCommand": true,
+            "args": ["-u"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "make",
+            "command": "${fileDirname}\\Make.bat",
+            "isShellCommand": true,
+            "args": ["-m", "${fileDirname}"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "lorris",
+            "command": "c:\\Lorris\\Lorris.exe",
+            "isShellCommand": true,
+            "args": ["-v"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "help",
+            "command": "start",
+            "isShellCommand": true,
+            "args": ["", "https://ev3rt-cxx.readthedocs.org"],
+            "showOutput": "always"
+        }
+    ]
+}
