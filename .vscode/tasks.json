@@ -28,14 +28,14 @@
             "taskName": "lorris",
             "command": "c:\\Lorris\\Lorris.exe",
             "isShellCommand": true,
-            "args": ["-v"],
+            "args": [""],
             "showOutput": "always"
         },
         {
             "taskName": "help",
             "command": "start",
             "isShellCommand": true,
-            "args": ["", "https://ev3rt-cxx.readthedocs.org"],
+            "args": ["", "https://rb3rt.readthedocs.org"],
             "showOutput": "always"
         }
     ]
