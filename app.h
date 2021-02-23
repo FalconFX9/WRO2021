@@ -51,10 +51,6 @@
  * Header file of sample program
  */
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /**
  * Common header files
  */
@@ -94,13 +90,13 @@ extern "C" {
 #ifndef TOPPERS_MACRO_ONLY
 
 extern void	main_task(intptr_t);
+extern void PID_for_cts(int, int);
+extern float PID_controller(int , float, float *, int *);
+extern void turn_IMU(int);
+extern void turn_CS();
 // extern void periodic_task_1(intptr_t);
 // extern void periodic_task_2(intptr_t);
 
 // extern void task_activator(intptr_t tskid);
 
 #endif /* TOPPERS_MACRO_ONLY */
-
-#ifdef __cplusplus
-}
-#endif
