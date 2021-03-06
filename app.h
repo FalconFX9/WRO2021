@@ -74,7 +74,7 @@
 /**
  * Task periods in ms
  */
-//#define PERIOD_PRD_TSK_1  (100)
+//#define PERIOD_PRD_TSK_1  (50)
 //#define PERIOD_PRD_TSK_2  (500)
 
 /**
@@ -90,11 +90,11 @@
 #ifndef TOPPERS_MACRO_ONLY
 
 extern void	main_task(intptr_t);
-extern void PID_for_cts(int, int);
+extern void PID_for_cts(int, int, int);
 extern float PID_controller(int , float, float *, int *);
-extern void turn_IMU(int);
+extern void turn_IMU(int, int);
 extern void turn_CS();
-// extern void periodic_task_1(intptr_t);
+//extern void logger(intptr_t);
 // extern void periodic_task_2(intptr_t);
 
 // extern void task_activator(intptr_t tskid);
