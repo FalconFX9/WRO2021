@@ -92,7 +92,7 @@
 extern void	main_task(intptr_t);
 extern void PID_for_cts(int, int, int);
 extern float PID_controller(int , float, float *, int *);
-extern void turn_IMU(int, int);
+extern void turn_IMU(int, int, int);
 extern void turn_CS();
 //extern void logger(intptr_t);
 // extern void periodic_task_2(intptr_t);
